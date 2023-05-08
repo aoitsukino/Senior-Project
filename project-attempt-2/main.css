@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(images/flowers.jpg);
+    background-size: 1100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background: rgb(198,234,251);
+    box-shadow: 0 5px 15px rgb(0,0,0,0.06);
+    z-index:999;
+    position: sticky;
+    top: 0;
+    width: 98.5%;
+    left: 0;
+    margin: 0 0 0 0;
+}
+
+#navigation-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#navigation-bar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navigation-bar li a{
+    text-decoration: none;
+    font-size:16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+
+#navigation-bar li a:hover {
+    color: rgb(67,186,250);
+}
+
+#navigation-bar li a:hover::after{
+   content: "";
+   width:40%;
+   height: 2px;
+   background: rgb(67,186,250);
+   position: absolute;
+   bottom: -4px;
+   left: 20px;
+    
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+#welcome h2{
+    padding-top: 200px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#welcome button{
+      align-items: center;
+      background-color: #0A66C2;
+      border: 0;
+      border-radius: 100px;
+      box-sizing: border-box;
+      color: #ffffff;
+      cursor: pointer;
+      display: inline-flex;
+      font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      justify-content: center;
+      line-height: 20px;
+      max-width: 480px;
+      min-height: 40px;
+      min-width: 0px;
+      overflow: hidden;
+      padding: 0px;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+      touch-action: manipulation;
+      transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+      user-select: none;
+      -webkit-user-select: none;
+      vertical-align: middle;
+      margin-left: 800px;
+    }
+
+    #welcome button li{
+        list-style: none;
+    }
+    
+    #welcome button li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    #welcome button:hover,
+    #welcome button:focus { 
+      background-color: #16437E;
+      color: #ffffff;
+    }
+    
+    #welcome button:active {
+      background: #09223b;
+      color: rgb(255, 255, 255, .7);
+    }
+    
+    #welcome button:disabled { 
+      cursor: not-allowed;
+      background: rgba(0, 0, 0, .08);
+      color: rgba(0, 0, 0, .3);
+    }
+
+#welcome button:hover{
+    cursor: pointer;
+    opacity: 0.9;
+ }
+
+ #welcome{
+    margin-bottom: 800px;
+ }
+
+ .items-image{
+    width:  300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.item-details{
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    background-color: #C5C6D0;
+    width: 370px;
+    height: 500px;
+    border-radius: 50px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 250px;
+    margin-bottom: 200px;
+    
+}
+
+.cart-button{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 13px 23px;
+    border: 1px solid #222222;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+    background: #fff;
+    color: #222222;
+    :hover {
+        border-color: #000000;
+        background: #f7f7f7;
+    }
+}
+
+.cart-button:hover{
+    opacity: 0.9;
+}
+
